@@ -12,7 +12,8 @@ This extension allows us to reveal run totals in the Concordion output, without 
 
 
 # Installation
-The extension is available from [Maven Central](http://search.maven.org/#artifactdetails%7Corg.concordion%7Cconcordion-run-totals-extension%7C1.1.2%7Cjar).</a>
+
+This extension requires concordion 1.5.0 (yet to be released)
 
 # Configuration
 

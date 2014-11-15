@@ -7,7 +7,7 @@ This [Concordion](http://www.concordion.org) extension adds run totals to the Co
 
 This extension allows us to reveal run totals in the Concordion output, without obscuring the intent of the specification. For example:
 
-![Logging Tooltip Image](images/RunResultsOutput.png)
+![Logging Tooltip Image](images/RunTotalsOutput.png)
 
 
 

@@ -1,4 +1,8 @@
-[![Build Status](https://travis-ci.org/concordion/concordion-run-totals-extension.svg?branch=master)](https://travis-ci.org/concordion/concordion-logging-tooltip-extension)
+[![Build Status](https://travis-ci.org/concordion/concordion-run-totals-extension.svg?branch=master)](https://travis-ci.org/concordion/concordion-run-totals-extension)
+
+[![Build Status](https://img.shields.io/travis/concordion/concordion-run-totals-extension.svg)](https://travis-ci.org/concordion/concordion-run-totals-extension)
+[![Maven Central](https://img.shields.io/maven-central/v/org.concordion/concordion-run-totals-extension.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.concordion%22%20AND%20a%3A%22concordion-run-totals-extension%22)
+[![Apache License 2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 This [Concordion](http://www.concordion.org) extension adds run totals to the Concordion output whenever the concordion:run annotation is used.
 
@@ -7,18 +11,18 @@ This [Concordion](http://www.concordion.org) extension adds run totals to the Co
 
 This extension allows us to reveal run totals in the Concordion output, without obscuring the intent of the specification. For example:
 
-![Logging Tooltip Image](images/RunTotalsOutput.png)
-
-
+![Run Totals Output Image](images/RunTotalsOutput.png)
 
 # Installation
+<!--- The extension is available from [Maven Central](http://search.maven.org/#artifactdetails%7Corg.concordion%7Cconcordion-run-totals-extension%7C1.0.0%7Cjar). --->
+The 1.0.0-SNAPSHOT version of the extension is available from the [Sonatype snapshot repository](https://oss.sonatype.org/content/repositories/snapshots/org/concordion/concordion-run-totals-extension/1.0.0-SNAPSHOT/). 
 
-This extension requires concordion 1.5.0 (yet to be released)
+### Dependencies
+This extension requires Concordion v1.5.0 or later.
 
 # Configuration
 
 ## Default Configuration
-
 
 To install the extension, either annotate the fixture class with:
 

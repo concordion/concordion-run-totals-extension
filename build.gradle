@@ -2,6 +2,16 @@ apply from: 'https://raw.githubusercontent.com/concordion/concordion-extension-b
 
 description = 'An extension to the Concordion Run command to display the total test counts of the fixture that was called'
 
+repositories {
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots/'
+    }
+}
+
+dependencies {
+    compile 'org.concordion:concordion:1.5.0-SNAPSHOT:tests'
+}
+
 ext {
     developers = {
         developer {

@@ -12,8 +12,7 @@ This extension allows us to reveal run totals in the Concordion output, without 
 ![Run Totals Output Image](images/RunTotalsOutput.png)
 
 # Installation
-<!--- The extension is available from [Maven Central](http://search.maven.org/#artifactdetails%7Corg.concordion%7Cconcordion-run-totals-extension%7C1.0.0%7Cjar). --->
-The 1.0.0-SNAPSHOT version of the extension is available from the [Sonatype snapshot repository](https://oss.sonatype.org/content/repositories/snapshots/org/concordion/concordion-run-totals-extension/1.0.0-SNAPSHOT/). 
+The extension is available from [Maven Central](http://search.maven.org/#artifactdetails%7Corg.concordion%7Cconcordion-run-totals-extension%7C1.0.0%7Cjar).
 
 ### Dependencies
 This extension requires Concordion v1.5.0 or later.

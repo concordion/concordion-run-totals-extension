@@ -17,8 +17,11 @@ public class RunTotalsExtension implements ConcordionExtension, RunListener {
 		writeText(event.getElement(), "threw exception");
 	}
 
-	
-	
+
+	@Override
+	public void runStarted(RunStartedEvent runStartedEvent) {
+	}
+
 	@Override
 	public void successReported(RunSuccessEvent event) {
 		writeText(event);

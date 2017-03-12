@@ -4,7 +4,6 @@
 
 This [Concordion](http://www.concordion.org) extension adds run totals to the Concordion output whenever the [concordion:run](http://concordion.org/Tutorial.html#concordion:run) command is used.
 
-
 # Introduction
 
 This extension allows us to reveal run totals in the Concordion output, without obscuring the intent of the specification. For example:
@@ -16,6 +15,8 @@ The extension is available from [Maven Central](http://search.maven.org/#artifac
 
 ### Dependencies
 This extension requires Concordion v1.5.0 or later.
+
+Note that Concordion 2.1.0 has breaking changes, that require this extension to be updated to version 1.1.0 or later.
 
 # Configuration
 

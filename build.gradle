@@ -20,9 +20,10 @@ ext {
     inceptionYear = '2014'   
 }
 
-githubPages {
+gitPublish {
     repoUri = 'git@github.com:concordion/concordion-run-totals-extension.git'
-    pages {
+    branch = 'gh-pages'
+	contents {
         from 'docs'
     	
         from ('build/docs/javadoc/') {

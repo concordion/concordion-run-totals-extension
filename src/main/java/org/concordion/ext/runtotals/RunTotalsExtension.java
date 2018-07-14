@@ -4,6 +4,7 @@ import org.concordion.api.Element;
 import org.concordion.api.extension.ConcordionExtender;
 import org.concordion.api.extension.ConcordionExtension;
 import org.concordion.api.listener.*;
+import org.concordion.internal.FixtureType;
 
 public class RunTotalsExtension implements ConcordionExtension, RunListener {
 
@@ -17,7 +18,6 @@ public class RunTotalsExtension implements ConcordionExtension, RunListener {
 		writeText(event.getElement(), "threw exception");
 	}
 
-
 	@Override
 	public void runStarted(RunStartedEvent runStartedEvent) {
 	}
@@ -27,7 +27,6 @@ public class RunTotalsExtension implements ConcordionExtension, RunListener {
 		writeText(event);
 	}
 
-
 	@Override
 	public void failureReported(RunFailureEvent event) {
 		writeText(event);
@@ -35,11 +34,11 @@ public class RunTotalsExtension implements ConcordionExtension, RunListener {
 
 	@Override
 	public void ignoredReported(RunIgnoreEvent event) {
-		writeText( event);
+		writeText(event);
 	}
 
 	private void writeText(AbstractRunEvent event) {
-		writeText(event.getElement(), event.getResultSummary().printCountsToString(event.getResultSummary()));
+		writeText(event.getElement(), event.getResultSummary().printCountsToString(new FixtureType(this.getClass())));
 	}
 	
 	private void writeText(Element element, String text) {
@@ -47,5 +46,4 @@ public class RunTotalsExtension implements ConcordionExtension, RunListener {
 		sister.appendText(" (" + text + ")");
 		element.appendSister(sister);
 	}
-
 }
